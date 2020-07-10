@@ -2,7 +2,7 @@ import { Blog } from "../classes/Blog.js";
 
 /*
 ::
-::BLOG SEARCH METHODS. RETURN BLOGS BASED ON SEARCH QUERIS IN REALTIME
+::BLOG SEARCH METHOD. RETURN BLOGS BASED ON SEARCH QUERIS IN REALTIME
 ::
 */
 export const searchBlog = (queryString: string) => {
