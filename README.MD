@@ -1,0 +1,37 @@
+A PWA application by using TypeScript & IndexedDB.
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+: TYPESCRIPT & INDEXED_DB
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:
+:

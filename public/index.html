@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <title>Blogs | TypeScript | IndexedDB</title>
+  </head>
+
+  <body id="pageBody">
+    <div id="preferences" class="">
+      <div id="preferenceIcon">
+        <h1>P</h1>
+      </div>
+
+      <h5 class="bg-dark text-white p-2 text-center">Preferences</h5>
+      <div class="bg-colors">
+        <div class="color white" title="White"></div>
+        <div class="color aliceblue" title="Aliceblue"></div>
+        <div class="color crimson" title="Crimson"></div>
+        <div class="color lavender" title="Lavender"></div>
+        <div class="color teal" title="Teal"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-wrapper">
+        <form id="form">
+          <input type="hidden" name="id" id="blogIdInput" value="0" />
+
+          <div class="form-group">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+              <h3>Write a new blog</h3>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-3"></div>
+            <div class="col-md-12" id="errors"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-3">
+              <label for="title">Title</label>
+            </div>
+            <div class="col-md-12">
+              <input
+                required
+                type="text"
+                id="title"
+                placeholder="title"
+                autofocus
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <label for="body">Description</label>
+            </div>
+            <div class="col-md-12">
+              <textarea
+                required
+                name="body"
+                id="body"
+                cols="10"
+                rows="3"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <label for="blogCategories">Blog Category</label>
+            </div>
+            <div class="col-md-12">
+              <select id="category" class="form-control">
+                <option value="none">Select blog category</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+              <input
+                type="submit"
+                class="submit-btn btn btn-sm btn-outline-success"
+                value="store"
+                id="submitBtn"
+                disabled
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container border shadow mb-3" id="searchBox">
+      <div class="search row p-3">
+        <input type="search" id="searchBoxInput" placeholder="search blog" />
+      </div>
+
+      <div id="notFound" class="text-red"></div>
+      <div id="found"></div>
+    </div>
+
+    <div class="container">
+      <div id="blogs"></div>
+    </div>
+    <hr />
+    <footer class="container p-4 border shadow">
+      <div class="row" id="footer"></div>
+    </footer>
+
+    <div id="modal">
+      <div id="modalContent"></div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
